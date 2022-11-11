@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>HackerNews</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="main-page">
+    <div class="navbar">
+        <ul class="nav-links">
+            <li class="nav-item"><a id="hacker-news" href="">Hacker News</a></li>
+            <li class="nav-item"><a onclick="getNews('newest')">new</a></li>
+            <li class="nav-item"><a href="threads.html">threads</a></li>
+            <li class="nav-item"><a onclick="getNews('ask')">ask</a></li>
+            <li class="nav-item"><a onclick="getNews('show')">show</a></li>
+            <li class="nav-item"><a href="submit.html">submit</a></li>
+        </ul>
+        <ul  class="nav-log">
+            <li class="nav-item"><a id="me" href="user?id=yyyyxxxx">yyyyxxxx</a><span id="karma">(1)</span></li>
+            <li class="nav-item"><a id="logout" href="logout?auth=260b9537da922b5c000c84056efd68a205ad0209&amp;goto=news">logout</a></li>
+        </ul>
+    </div>
+    <div id="news-container">
+
+    </div>
+</div>
+
+</body>
+<script src="js/news.js"></script>
+</html>

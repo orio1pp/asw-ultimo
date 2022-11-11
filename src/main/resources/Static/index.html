@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>HackerNews</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <meta name="google-signin-client_id" content="924920240682-32aaubm7u3ac390p3kroe29o1hpe34ef.apps.googleusercontent.com">
+    <script src = "js/login.js"></script>
+    <script src="https://apis.google.com/js/platform.js?onload=onLoadCallback" async defer></script>
+
+</head>
+<body>
+<div class="main-page">
+    <div class="navbar">
+        <ul class="nav-links">
+            <li class="nav-item"><a id="hacker-news" href="">Hacker News</a></li>
+            <li class="nav-item"><a onclick="getNews('newest')">new</a></li>
+            <li class="nav-item"><a onclick="getThreads('threads')">threads</a></li>
+            <li class="nav-item"><a onclick="getNews('ask')">ask</a></li>
+            <li class="nav-item"><a onclick="getNews('show')">show</a></li>
+            <li class="nav-item"><a onclick="getSubmit()">submit</a></li>
+        </ul>
+        <ul class="nav-log" id = "login">
+            <div id="g_id_onload"
+                 data-client_id="924920240682-32aaubm7u3ac390p3kroe29o1hpe34ef.apps.googleusercontent.com"
+                 data-callback="handleCredentialResponse">
+            </div>
+            <li class="nav-item" id = "me"><div class="g_id_signin" data-type="standard"></div></li>
+        </ul>
+    </div>
+    <div id="main-container">
+    </div>
+</div>
+
+</body>
+<script src="js/news.js"></script>
+<script src="js/index.js"></script>
+</html>
